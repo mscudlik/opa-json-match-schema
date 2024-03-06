@@ -1,17 +1,18 @@
-## string regex pattern
-
-```shell
-opa eval -b . -f pretty data.string_regex_pattern.policy --input string_regex_pattern/input/valid/data.json
-opa eval -b . -f pretty data.string_regex_pattern.policy --input string_regex_pattern/input/invalid_length/data.json
-opa eval -b . -f pretty data.string_regex_pattern.policy --input string_regex_pattern/input/invalid_regex/data.json # should not match because of regex
-```
-
-## array input
+## Issue 1: array input and schema does not work
 
 ```shell
 opa eval -b . -f pretty data.array_input.policy --input array_input/input/valid/data.json
 opa eval -b . -f pretty data.array_input.policy --input array_input/input/invalid_no_array/data.json
 opa eval -b . -f pretty data.array_input.policy --input array_input/input/invalid_type/data.json
+```
+
+
+## Issue 2: string regex patterns are not taken into account
+
+```shell
+opa eval -b . -f pretty data.string_regex_pattern.policy --input string_regex_pattern/input/valid/data.json
+opa eval -b . -f pretty data.string_regex_pattern.policy --input string_regex_pattern/input/invalid_length/data.json
+opa eval -b . -f pretty data.string_regex_pattern.policy --input string_regex_pattern/input/invalid_regex/data.json # should not match because of regex
 ```
 
 ## tests
