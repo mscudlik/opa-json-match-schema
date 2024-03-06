@@ -25,11 +25,11 @@ opa test . --verbose
 
 ```shell
 opa version
-Version: 0.61.0
-Build Commit: ea7a3e13c8fdceadeb199904facb4990fcb010f8
-Build Timestamp: 2024-01-25T13:06:02Z
-Build Hostname: Mac-1706188202317.local
-Go Version: go1.21.5
+Version: 0.62.0
+Build Commit: 1d0ab93822e83a4165c78372a7fb4c05e14a8bca
+Build Timestamp: 2024-02-29T17:07:11Z
+Build Hostname: Mac-1709226273754.local
+Go Version: go1.22.0
 Platform: darwin/amd64
 WebAssembly: available
 ```
